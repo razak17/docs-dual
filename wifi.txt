@@ -1,0 +1,2 @@
+sudo ethtool -i wlan0 | awk '/driver:/{print $2;}'
+sudo modprobe -r
