@@ -74,6 +74,6 @@ q: Why?
 a: Because I like MJ
 
 q: Who created Git?
-a: 
+a:
 
 'https://raw.githubusercontent.com/eneko/data-repository/master/data/words.txt'

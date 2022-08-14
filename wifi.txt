@@ -1,2 +1,31 @@
 sudo ethtool -i wlan0 | awk '/driver:/{print $2;}'
 sudo modprobe -r
+
+# Packages
+iwd
+dhcpcd
+connmanctl conmanctl-openrc
+networkmanager networkmanager-openrc
+
+# Config
+sudo rc-update add dhcpcd default
+sudo rc-update add NetworkManager default
+sudo rc-update add connmand default
+
+# /etc/iwd/main.conf
+[General]
+EnableNetworkConfiguraton=true
+[Network]
+RoutePriorityOffset=200
+NameResolvingService=resolvconf
+
+# /etc/NetworkManager/conf.d/iwd.conf
+[device]
+wifi.iwd.autoconnect=yes
+wifi.backend=iwd
+
+# Connect
+connmanctl>scan wifi
+connmanctl>agent on
+connmanctl>services
+connmanctl>connect wifi_********
