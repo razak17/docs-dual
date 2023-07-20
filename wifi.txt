@@ -29,3 +29,7 @@ connmanctl>scan wifi
 connmanctl>agent on
 connmanctl>services
 connmanctl>connect wifi_********
+
+# issues
+- Wifi networks not showing
+sudo rc-service NetworkManager restart
