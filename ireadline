@@ -1,0 +1,19 @@
+#!/bin/bash
+mkdir -p "$HOME/.dots"
+
+printf "Enter album name: "
+read -r album_name
+pushd "$HOME/.dots" || exit
+mkdir -p "$album_name"
+
+urls=$(curl -s "$1" | grep -oiE "https://pagalnew.com/songs/.*" | cut -d\" -f1 | sort | uniq)
+for url in $urls; do
+	# echo "Downloading $url..."
+  track=$(curl -s "$url" | grep "320 KBPS Song Download" | cut -d'"' -f8)
+  echo "Downloading $track"
+	aria2c -d "$album_name" "https://pagalnew.com$track"
+done
+
+# while read -r line; do
+# 	echo "$line"
+# done <dl.txt
