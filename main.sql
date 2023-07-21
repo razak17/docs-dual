@@ -1,2 +1,8 @@
-SELECT * FROM post
-GROUP BY post.id
+SELECT
+  *
+FROM
+  post
+WHERE
+  id = 1
+GROUP BY
+  post.id
