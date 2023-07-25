@@ -2,6 +2,19 @@ const add = (a, b) => a + b;
 
 const test = 2 + "";
 
+
+
+function toTitleCase(str) {
+  return str.replace(
+    /\w\S*/g,
+    (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
+  );
+}
+
+console.log("2lalal".split("")[0]);
+
+console.log(toTitleCase("hello world mom dad"));
+
 console.log(add(2, 3));
 console.log(add(12, 31));
 
@@ -28,4 +41,4 @@ const sql = /* sql */ `
 SELECT * FROM users WHERE name = 'John' AND role = 'web developer'
 `;
 
-console.log(add(12, 31));
+console.log(add(12, 33));
