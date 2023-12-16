@@ -23,6 +23,7 @@ local status = "is awesome"
 --------------------------------------------------------------------------------
 -- Load Module
 --------------------------------------------------------------------------------
+
 require("user.globals")
 require("user.bootstrap")
 require("user.config")
@@ -32,3 +33,9 @@ require("user.config")
 lorem = ipsum
 dolor = sit
 foo   = bar
+'󰗊 '
+' '
+
+nf-linux-artix
+
+local ll = '@now'
