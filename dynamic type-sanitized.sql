@@ -13662,7 +13662,7 @@ INSERT INTO "public"."dynamic_types_physical_examinations" ("id", "parameter", "
 (2, 'Height', 'cm', 'Body Measures', '', '', '', '', '', 't'),
 (3, 'Systolic blood pressure', 'mm Hg', 'Vitals', '', '', '', '', '', 't'),
 (4, 'Diastolic blood pressure', 'mm Hg', 'Vitals', '', '', '', '', '', 't'),
-(5, 'BMI', 'kg/m2', 'Body Measures', '', '', '', '', '', 't');
+(5, 'BMI', 'kg', 'Body Measures', '', '', '', '', '', 't');
 
 INSERT INTO "public"."dynamic_types_procedures" ("id", "value") VALUES
 (1, 'abdominal surgery'),
@@ -14745,16 +14745,16 @@ INSERT INTO "public"."dynamic_types_track_findings_defaults" ("id", "value", "na
 (3, 'oral_cavity', 'dental_care'),
 (4, 'skin_male_full_body', 'dermatology'),
 (5, 'pancreas', 'endocrinology'),
-(6, 'pancreas', 'gastroenterology'),
+(6, 'pancreas2', 'gastroenterology'),
 (7, 'female_reproductive_system', 'gynecology'),
 (8, 'blood_cells', 'hematology'),
 (9, 'kidney', 'nephrology'),
 (10, 'brain', 'neurology'),
-(11, 'pancreas', 'oncology'),
+(11, 'pancreas3', 'oncology'),
 (12, 'eye', 'ophthalmology'),
 (13, 'bones_skeleton', 'orthopedics'),
 (14, 'ear', 'otorhinolaryngology'),
-(15, 'brain', 'psychiatry'),
+(15, 'brain2', 'psychiatry'),
 (16, 'lungs', 'pulmonology'),
 (17, 'male_urine_bladder_prostate', 'urology');
 
