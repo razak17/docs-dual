@@ -4185,7 +4185,7 @@ Female: <14days: 81.5-248.7, <1yr: 121.7-472.6, <10yrs: 141.8-336.4,<13yrs: 128.
 ('Amylase / Creatinine Clearance', 8, 2, 5, '%', 0, 100000, '{ophthalmology,dental_care}', 2, 5, '', 39),
 ('Androstenedione (D4)', 4, 0.6, 4, 'ng/ml', 0, 100000, '{ophthalmology,dental_care}', 0.5, 5.8, '', 40),
 ('Anion Gap - arterial blood', 93, 8, 16, 'mmol/L', 0, 100000, '{ophthalmology,dental_care}', 8, 16, '', 41),
-('Anticoagulants', 96, NaN, NaN, '', 0, 100000, '{hematology,ophthalmology,dental_care}', NaN, NaN, '', 42),
+('Anticoagulants', 96, 0, 0, '', 0, 100000, '{hematology,ophthalmology,dental_care}', 0, 0, '', 42),
 ('Anti-double strand DNA (dsDNA) Ab IgG - blood', 97, 0, 20, 'U/ml', 0, 100000, '{nephrology,ophthalmology}', 0, 20, '', 43),
 ('Anti-ENA (extractable nuclear Ag) Ab - blood', 97, 0, 1, 'Index', 0, 100000, '{ophthalmology}', 0, 1, '', 44),
 ('Anti-mitochondrial M2 Ab', 97, 0, 10, 'UI/ml', 0, 100000, '{nephrology,ophthalmology,dental_care}', 0, 10, '', 45),
