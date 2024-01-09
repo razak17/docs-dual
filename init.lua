@@ -39,3 +39,4 @@ foo   = bar
 nf-linux-artix
 
 local ll = '@now'
+local path = ''

@@ -1,0 +1,74 @@
+{
+  "event": "taskStatusUpdated",
+  "history_items": [
+    {
+      "id": "3833523166392431821",
+      "type": 1,
+      "date": "1704291926124",
+      "field": "status",
+      "parent_id": "900302605095",
+      "data": {
+        "status_type": "custom"
+      },
+      "source": "None",
+      "user": {
+        "id": 56573168,
+        "username": "Abdul Razak",
+        "email": "abdul@reallygreattech.com",
+        "color": "#81b1ff",
+        "initials": "AR",
+        "profilePicture": "None"
+      },
+      "before": {
+        "status": "to do",
+        "color": "#87909e",
+        "orderindex": 0,
+        "type": "open"
+      },
+      "after": {
+        "status": "in progress",
+        "color": "#1090e0",
+        "orderindex": 1,
+        "type": "custom"
+      }
+    }
+  ],
+  "task_id": "86bwxqm84",
+  "webhook_id": "dc9063f9-81a5-4104-a9e1-4e32e1c20c10"
+},
+{
+  "event": "taskUpdated",
+  "history_items": [
+    {
+      "id": "3833523166392431821",
+      "type": 1,
+      "date": "1704291926124",
+      "field": "status",
+      "parent_id": "900302605095",
+      "data": {"status_type": "custom"},
+      "source": "None",
+      "user": {
+        "id": 56573168,
+        "username": "Abdul Razak",
+        "email": "abdul@reallygreattech.com",
+        "color": "#81b1ff",
+        "initials": "AR",
+        "profilePicture": "None"
+      },
+      "before": {
+        "status": "to do",
+        "color": "#87909e",
+        "orderindex": 0,
+        "type": "open"
+      },
+      "after": {
+        "status": "in progress",
+        "color": "#1090e0",
+        "orderindex": 1,
+        "type": "custom"
+      }
+    }
+  ],
+  "task_id": "86bwxqm84",
+  "webhook_id": "dc9063f9-81a5-4104-a9e1-4e32e1c20c10"
+}
