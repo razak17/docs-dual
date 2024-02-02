@@ -1,0 +1,14 @@
+{
+  "lsp": {
+    "disabled": {
+      "servers": [
+        "tailwindcss"
+      ]
+    }
+  },
+  "plugins": {
+    "disabled": [
+      "noice.nvim"
+    ]
+  }
+}
