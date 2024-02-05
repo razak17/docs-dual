@@ -197,3 +197,245 @@ return {
     format = {}, --- @see section on formatting
   }
 }
+
+import {
+  BadRequestException,
+  Body,
+  Controller,
+  Delete,
+  Get,
+  InternalServerErrorException,
+  Param,
+  ParseEnumPipe,
+  Patch,
+  Post,
+  Query,
+  UploadedFiles,
+  UseGuards,
+  UseInterceptors,
+  ValidationPipe,
+} from '@nestjs/common';
+import { S3Service } from '../../s3/s3.service';
+import { ActivitiesService } from './activities.service';
+import {
+  ApiBody,
+  ApiConsumes,
+  ApiOperation,
+  ApiParam,
+  ApiQuery,
+  ApiResponse,
+  ApiTags,
+} from '@nestjs/swagger';
+import {
+  FutureAppointmentCategory,
+  Role,
+  UPLOAD_REPORT_FILES_MAX_COUNT,
+  UPLOAD_REPORT_FILE_KEY,
+  ActivityCategory,
+  ACITIVITY_CATEGORY_OPTIONS,
+  PermissionRole
+} from '@shared';
+import { User } from '../../decorators/user/user.decorator';
+import { UserModel } from '../user/user.model';
+
+import { ActivityEntity } from './entities/activity.entity';
+import { CreateActivityDto } from './dto/create-activity.dto';
+import { FilesInterceptor } from '@nestjs/platform-express';
+import { UpdateActivityDto } from './dto/update-activity.dto';
+import { FormDataParsePipe } from '../../pipes/formDataParsePipe';
+import { authorizationGuard } from '../../guards/authorization.guard';
+
+@ApiTags('activities')
+@UseGuards(
+  authorizationGuard({
+    permissionRoles: [PermissionRole.CASE_ADMIN],
+  })
+)
+@Controller('activities')
+
+export class ActivitiesController {
+  constructor(
+    private readonly activitiesService: ActivitiesService,
+    private readonly s3Service: S3Service
+  ) {}
+
+  @Post()
+  @UseInterceptors(
+    FilesInterceptor(UPLOAD_REPORT_FILE_KEY, UPLOAD_REPORT_FILES_MAX_COUNT)
+  )
+  @ApiOperation({ summary: 'Create activitiy' })
+  @ApiResponse({
+    status: 201,
+    type: ActivityEntity,
+  })
+  @ApiResponse({
+    status: 500,
+    description: 'Server error',
+  })
+  async create(
+    @User({ roles: [Role.PATIENT] })
+    { patient: { id: userId, firebaseId } }: UserModel,
+    @Body(new FormDataParsePipe())
+    createActivityDto: CreateActivityDto,
+    @UploadedFiles() files: File[] = []
+  ) {
+    const filesId = await this.s3Service.uploadMulti(files, firebaseId);
+    if (typeof createActivityDto.details === 'string')
+      createActivityDto.details = JSON.parse(createActivityDto.details);
+
+    return this.activitiesService
+      .createActivity({
+        ...createActivityDto,
+        userId,
+        report: filesId,
+      } as CreateActivityDto)
+      .catch((e) => {
+        throw new InternalServerErrorException(e);
+      });
+  }
+
+  @Get()
+  @ApiOperation({ summary: 'Get all user activities' })
+  @ApiQuery({
+    name: 'limit',
+    description: 'Limit the returned results',
+  })
+  @ApiQuery({
+    name: 'offset',
+    description: 'Offset the returned results',
+  })
+  @ApiResponse({
+    status: 200,
+    type: ActivityEntity,
+    isArray: true,
+  })
+  @ApiResponse({
+    status: 500,
+    description: 'Server error',
+  })
+  findAll(
+    @User() { patient: { id } }: UserModel,
+    @Query() query: { limit: number, offset: number }
+    //TODO change to numbers in other places
+  ) {
+    return this.activitiesService.findAll(id, query.limit, query.offset);
+  }
+
+  @Get(':id')
+  @ApiOperation({ summary: 'Get user activitiy by id' })
+  @ApiResponse({
+    status: 200,
+    type: ActivityEntity,
+  })
+  @ApiResponse({
+    status: 500,
+    description: 'Server error',
+  })
+  async findOne(
+    @User() { patient: { id: userId } }: UserModel,
+    @Param('id') id: string
+  ) {
+    return await this.activitiesService.findOne(+id, userId);
+  }
+
+  @ApiParam({
+    name: 'category',
+    enum: ACITIVITY_CATEGORY_OPTIONS,
+    description: 'The category of the activitiy',
+  })
+  @ApiQuery({
+    name: 'limit',
+    description: 'Limit the returned results',
+  })
+  @ApiQuery({
+    name: 'offset',
+    description: 'Offset the returned results',
+  })
+  @Get('/by-category/:category')
+  @ApiOperation({ summary: 'Get all user activities by category' })
+  @ApiResponse({
+    status: 200,
+    type: ActivityEntity,
+    isArray: true,
+  })
+  @ApiResponse({
+    status: 400,
+    description: 'Invalid category provided',
+  })
+  @ApiResponse({
+    status: 500,
+    description: 'Server error',
+  })
+  findAllByCategory(
+    @User() { patient: { id: userId } }: UserModel,
+    @Param('category', new ParseEnumPipe(FutureAppointmentCategory))
+    category: FutureAppointmentCategory,
+    @Query() query: { limit: string, offset: number}
+  ) {
+    return this.activitiesService.findAllByCategory(
+      userId,
+      category,
+      query.limit,
+      query.offset
+    );
+  }
+
+  @Patch(':id')
+  @UseInterceptors(
+    FilesInterceptor(UPLOAD_REPORT_FILE_KEY, UPLOAD_REPORT_FILES_MAX_COUNT)
+  )
+  @ApiResponse({
+    status: 200,
+    type: ActivityEntity,
+  })
+  @ApiResponse({
+    status: 500,
+    description: 'Server error',
+  })
+  @ApiOperation({ summary: 'Update user activitiy' })
+  @ApiResponse({ status: 200, type: ActivityEntity })
+  @ApiResponse({ status: 500, description: 'Server error' })
+  async update(
+    @User({ roles: [Role.PATIENT] })
+    { patient: { id: userId, firebaseId } }: UserModel,
+    @Param('id') id: string,
+    @Body(new FormDataParsePipe()) updatedDto: UpdateActivityDto,
+    @UploadedFiles() files: File[] = []
+  ) {
+    if (typeof updatedDto.details === 'string')
+      updatedDto.details = JSON.parse(updatedDto.details);
+    const updatedFilesId: string = await this.s3Service.update(
+      files,
+      updatedDto.report,
+      this.activitiesService,
+      id,
+      userId,
+      firebaseId
+    );
+    updatedDto.report = updatedFilesId;
+    return await this.activitiesService.update(+id, userId, updatedDto);
+  }
+
+  @Delete(':id')
+  @ApiOperation({ summary: 'Delete user activitiy' })
+  @ApiResponse({
+    status: 200,
+  })
+  @ApiResponse({
+    status: 500,
+    description: 'Server error',
+  })
+  async remove(
+    @User({ roles: [Role.PATIENT] }) { patient: { id: userId } }: UserModel,
+    @Param('id') id: string
+  ) {
+    const { report: oldReport } = await this.activitiesService.findOne(
+      +id,
+      userId
+    );
+    if (oldReport) {
+      await this.s3Service.deleteMulti(oldReport);
+    }
+    return this.activitiesService.remove(+id, userId);
+  }
+}
