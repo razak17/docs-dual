@@ -15,3 +15,4 @@ end
 local t = { "to", "no", "no", "of" }
 local unique = removeDuplicates(t)
 print(table.concat(unique, ", ")) -- prints "1, 2, 3, 4"
+print(t[2])
