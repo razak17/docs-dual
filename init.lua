@@ -34,7 +34,8 @@ foo   = bar
 '󰗊 '
 ' '
 
-nf-linux-artix
-
-local ll = '@now'
-local path = ''
+-- lorem = ipsum
+-- dolor = sit
+-- HERE LIES the dragon alsol
+local
+k
