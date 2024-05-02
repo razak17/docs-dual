@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Copy all undone lines in md file
+# Usage: copy_undone <file.md>
+
+# Get all undone lines
+grep -n '^\s*-\s*\[ \]' $1 | cut -d: -f1 | xargs -I {} sed -n "{}p" $1 | xclip -selection clipboard
+
+# paste text in clipboard
+xclip -o -selection clipboard
+
+# Print message
+echo "Copied all undone lines to clipboard"
+
+

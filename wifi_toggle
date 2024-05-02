@@ -1,0 +1,15 @@
+#!/bin/sh
+
+while [ "$#" -gt 0 ]; do
+	curr=$1
+	shift
+
+	case "$curr" in
+	-e)
+    sudo wpa_cli enable_network 1
+  ;;
+	-d)
+    sudo wpa_cli disable_network 1
+  ;;
+	esac
+done

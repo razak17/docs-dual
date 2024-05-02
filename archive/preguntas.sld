@@ -1,0 +1,1 @@
+Alfonso Reyes que un escribar ensayista diplomatico y filos ofo mexicano. Es considerado uno de los intectuales mas importantes  de siglo XX en America latina. Sus ostras obras incluyen "la experencia literaria", "Capitilos de literatura espanda". "Cuestiones esteticas" y "Cartones de Madrid".

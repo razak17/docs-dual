@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# Find hello.lua in home directory
+find ~ -name hello.lua

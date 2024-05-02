@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+choice="$(pacman -Qnq | sudo pacman -S - --noconfirm --overwrite '*')"

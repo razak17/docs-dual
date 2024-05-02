@@ -1,0 +1,1 @@
+npm i -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-next eslint-config-prettier eslint-plugin-jsonc eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-simple-import-sort eslint-plugin-tailwindcss eslint-plugin-typescript-sort-keys prettier-plugin-tailwindcss prettier typescript

@@ -1,0 +1,5 @@
+#!/bin/sh
+
+
+xinput disable <device id>
+xinput enable <device id>

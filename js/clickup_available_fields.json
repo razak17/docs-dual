@@ -1,0 +1,52 @@
+{
+  "project.name": "Mediboard",
+  "sources": ["ClickUp"],
+  "frame": {
+    "source": "ClickUp",
+    "type": "Sprint",
+    "name": "Sprint 12 - Jan 21, 2024",
+    "description": "Sprint Goals:\n- Create a working minimal POC for the new ACL system (Users & Permissions).\n- Create a draft test plan for the whole flow of ACL.\n",
+    "startDate": "Jan 7, 2024",
+    "endDate": "Jan 21, 2024"
+  },
+  "unassigned": {
+    "TODO": 35,
+    "IN PROGRESS": 60,
+    "DONE": 10,
+    "CLOSED": 0
+  },
+  "team.members": [
+    {
+      "email": "bob@example.com",
+      "name": "Bob Smith",
+    },
+    {
+      "email": "alice@example.com",
+      "name": "Alice Jones",
+    }
+  ],
+  "tasks": [
+    {
+      "id": "c8uwj52",
+      "name": "Create a working minimal POC for the new ACL system.",
+      "status": "TODO",
+      "assignee": "bob@example.com",
+      "subtasks": [
+        {
+          "id": "c8j129b",
+          "parentTask": "c8uwj52",
+          "name": "Design ACL database schema",
+          "status": "IN PROGRESS",
+          "assignee": "bob@example.com"
+        },
+        {
+          "id": "vja99sk",
+          "parentTask": "c8uwj52",
+          "name": "Implement basic ACL functionalities",
+          "status": "IN REVIEW",
+          "assignee": "alice@example.com"
+        }
+      ]
+    },
+  ]
+}

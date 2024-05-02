@@ -1,0 +1,484 @@
+{
+  "status": "success",
+  "message": "",
+  "data": {
+    "seoOnPage": {
+      "og_type": "video.movie",
+      "titleHead": "Henry Danger-Henry Danger (2014) [HD-Vietsub]",
+      "seoSchema": {
+        "@context": "https://schema.org",
+        "@type": "TvSeries",
+        "name": "Henry Danger-Henry Danger (2014) [HD-Vietsub]",
+        "dateModified": "2022-06-28T15:17:42.000Z",
+        "dateCreated": "2022-06-28T15:17:42.000Z",
+        "url": "https://ophim1.cc/phim/henry-danger",
+        "datePublished": "2022-06-28T15:17:42.000Z",
+        "image": "https://img.ophim10.cc/uploads/movies/henry-danger-thumb.jpg",
+        "director": "Ophim1.CC"
+      },
+      "descriptionHead": "Một công việc bán thời gian mới buộc Henry Hart phải cân bằng giữa hai cuộc sống, một là cậu thiếu niên điển hình và một là Nhóc Nguy Hiểm – phụ tá siêu anh hùng bí...",
+      "og_image": [
+        "movies/henry-danger-thumb.jpg",
+        "movies/henry-danger-thumb.jpg"
+      ],
+      "updated_time": 1656577600000,
+      "og_url": "phim/henry-danger"
+    },
+    "breadCrumb": [
+      {
+        "name": "Phim Bộ",
+        "slug": "/danh-sach/phim-bo",
+        "position": 2
+      },
+      {
+        "name": "Âu Mỹ",
+        "slug": "/quoc-gia/au-my",
+        "position": 3
+      },
+      {
+        "name": "Hài Hước",
+        "slug": "/the-loai/hai-huoc",
+        "position": 3
+      },
+      {
+        "name": "Henry Danger",
+        "isCurrent": true,
+        "position": 4
+      }
+    ],
+    "params": {
+      "slug": "henry-danger"
+    },
+    "item": {
+      "created": {
+        "time": "2022-06-28T15:17:42.000Z"
+      },
+      "modified": {
+        "time": "2022-06-30T08:26:40.000Z"
+      },
+      "_id": "62bb1b963e39f9843cb5e63a",
+      "name": "Henry Danger",
+      "origin_name": "Henry Danger",
+      "content": "<p>Một công việc bán thời gian mới buộc Henry Hart phải cân bằng giữa hai cuộc sống, một là cậu thiếu niên điển hình và một là Nhóc Nguy Hiểm – phụ tá siêu anh hùng bí mật.</p>",
+      "type": "series",
+      "status": "completed",
+      "thumb_url": "henry-danger-thumb.jpg",
+      "poster_url": "henry-danger-poster.jpg",
+      "is_copyright": false,
+      "sub_docquyen": false,
+      "chieurap": false,
+      "trailer_url": "",
+      "time": "22phút/tập",
+      "episode_current": "Hoàn Tất (26/26)",
+      "episode_total": "26 Tập",
+      "quality": "HD",
+      "lang": "Vietsub",
+      "notify": "",
+      "showtimes": "",
+      "slug": "henry-danger",
+      "year": 2014,
+      "view": 18,
+      "actor": [
+        "Jace Norman",
+        " Cooper Barnes",
+        " Riele Downs",
+        " Sean Ryan Fox",
+        " Ella Anderson",
+        " Michael D. Cohen"
+      ],
+      "director": [
+        ""
+      ],
+      "category": [
+        {
+          "id": "620a221de0fc277084dfd1c1",
+          "name": "Hài Hước",
+          "slug": "hai-huoc"
+        }
+      ],
+      "country": [
+        {
+          "id": "620a231fe0fc277084dfd7ce",
+          "name": "Âu Mỹ",
+          "slug": "au-my"
+        }
+      ],
+      "episodes": [
+        {
+          "server_name": "Vietsub #1",
+          "server_data": [
+            {
+              "name": "1",
+              "slug": "1",
+              "filename": "Henry Danger_S01E01_Tập 1",
+              "link_embed": "https://hd1080.opstream2.com/share/b0dde169fb34d690cf472de3da61a0ea",
+              "link_m3u8": "https://hd1080.opstream2.com/20220627/23669_fabf96b3/index.m3u8"
+            },
+            {
+              "name": "2",
+              "slug": "2",
+              "filename": "Henry Danger_S01E02_Tập 2",
+              "link_embed": "https://hd1080.opstream2.com/share/991b499bc45394c77e00daa945bf9353",
+              "link_m3u8": "https://hd1080.opstream2.com/20220627/23663_db0de8e8/index.m3u8"
+            },
+            {
+              "name": "3",
+              "slug": "3",
+              "filename": "Henry Danger_S01E03_Tập 3",
+              "link_embed": "https://hd1080.opstream2.com/share/bea3ffc1d96446a163e19bb227167508",
+              "link_m3u8": "https://hd1080.opstream2.com/20220627/23660_88b9cec1/index.m3u8"
+            },
+            {
+              "name": "4",
+              "slug": "4",
+              "filename": "Henry Danger_S01E04_Tập 4",
+              "link_embed": "https://hd1080.opstream2.com/share/21a750226c83e601b384a7a0152d016a",
+              "link_m3u8": "https://hd1080.opstream2.com/20220627/23656_577a551b/index.m3u8"
+            },
+            {
+              "name": "5",
+              "slug": "5",
+              "filename": "Henry Danger_S01E05_Tập 5",
+              "link_embed": "https://hd1080.opstream2.com/share/3630391d291abc67bf9daec2c332829c",
+              "link_m3u8": "https://hd1080.opstream2.com/20220627/23653_398df910/index.m3u8"
+            },
+            {
+              "name": "6",
+              "slug": "6",
+              "filename": "Henry Danger_S01E06_Tập 6",
+              "link_embed": "https://hd1080.opstream2.com/share/f9ea301093a1aa4b23743e432cb0e33b",
+              "link_m3u8": "https://hd1080.opstream2.com/20220627/23651_f773401d/index.m3u8"
+            },
+            {
+              "name": "7",
+              "slug": "7",
+              "filename": "Henry Danger_S01E07_Tập 7",
+              "link_embed": "https://hd1080.opstream2.com/share/b42885b37e25c65c4def62e4b4788509",
+              "link_m3u8": "https://hd1080.opstream2.com/20220627/23649_b2b4ad68/index.m3u8"
+            },
+            {
+              "name": "8",
+              "slug": "8",
+              "filename": "Henry Danger_S01E08_Tập 8",
+              "link_embed": "https://hd1080.opstream2.com/share/bea3c20edb84a0dd83a99a9a7274bc67",
+              "link_m3u8": "https://hd1080.opstream2.com/20220627/23600_a82bdcbf/index.m3u8"
+            },
+            {
+              "name": "9",
+              "slug": "9",
+              "filename": "Henry Danger_S01E09_Tập 9",
+              "link_embed": "https://hd1080.opstream2.com/share/0dcd298d1ddcf500f4d5b12159a7db11",
+              "link_m3u8": "https://hd1080.opstream2.com/20220627/23597_9ab0bebc/index.m3u8"
+            },
+            {
+              "name": "10",
+              "slug": "10",
+              "filename": "Henry Danger_S01E10_Tập 10",
+              "link_embed": "https://hd1080.opstream2.com/share/2af209a360a2217e0838147bc405aeff",
+              "link_m3u8": "https://hd1080.opstream2.com/20220627/23646_de24824a/index.m3u8"
+            },
+            {
+              "name": "11",
+              "slug": "11",
+              "filename": "Henry Danger_S01E11_Tập 11",
+              "link_embed": "https://hd1080.opstream2.com/share/755170968d148dd7c11805a698e545aa",
+              "link_m3u8": "https://hd1080.opstream2.com/20220627/23643_d81d6a50/index.m3u8"
+            },
+            {
+              "name": "12",
+              "slug": "12",
+              "filename": "Henry Danger_S01E12_Tập 12",
+              "link_embed": "https://hd1080.opstream2.com/share/09c1279b01289fa282367675519325a1",
+              "link_m3u8": "https://hd1080.opstream2.com/20220627/23641_195aacd8/index.m3u8"
+            },
+            {
+              "name": "13",
+              "slug": "13",
+              "filename": "Henry Danger_S01E13_Tập 13",
+              "link_embed": "https://hd1080.opstream2.com/share/38df353da59fb1e8073e120c9c0f9482",
+              "link_m3u8": "https://hd1080.opstream2.com/20220627/23638_7cdbce1c/index.m3u8"
+            },
+            {
+              "name": "14",
+              "slug": "14",
+              "filename": "Henry Danger_S01E14_Tập 14",
+              "link_embed": "https://hd1080.opstream2.com/share/368afd895ea0487a5a2691fe08a05513",
+              "link_m3u8": "https://hd1080.opstream2.com/20220627/23636_5cba4641/index.m3u8"
+            },
+            {
+              "name": "15",
+              "slug": "15",
+              "filename": "Henry Danger_S01E15_Tập 15",
+              "link_embed": "https://hd1080.opstream2.com/share/1fd3b109321e7d1a99dd4cb213d3abb8",
+              "link_m3u8": "https://hd1080.opstream2.com/20220627/23632_3cfb0ca4/index.m3u8"
+            },
+            {
+              "name": "16",
+              "slug": "16",
+              "filename": "Henry Danger_S01E16_Tập 16",
+              "link_embed": "https://hd1080.opstream2.com/share/3f90bf0094b4d5585ba7bf466e6b90fd",
+              "link_m3u8": "https://hd1080.opstream2.com/20220627/23629_2613a895/index.m3u8"
+            },
+            {
+              "name": "17",
+              "slug": "17",
+              "filename": "Henry Danger_S01E17_Tập 17",
+              "link_embed": "https://hd1080.opstream2.com/share/51aba2c838a770fb802a949345d8b0c5",
+              "link_m3u8": "https://hd1080.opstream2.com/20220627/23626_4a292d07/index.m3u8"
+            },
+            {
+              "name": "18",
+              "slug": "18",
+              "filename": "Henry Danger_S01E18_Tập 18",
+              "link_embed": "https://hd1080.opstream2.com/share/100173f99f8fbdbf4ed1b56e6cf50f9d",
+              "link_m3u8": "https://hd1080.opstream2.com/20220627/23623_d53de553/index.m3u8"
+            },
+            {
+              "name": "19",
+              "slug": "19",
+              "filename": "Henry Danger_S01E19_Tập 19",
+              "link_embed": "https://hd1080.opstream2.com/share/33c1551e32887aef85c6007466e667a0",
+              "link_m3u8": "https://hd1080.opstream2.com/20220627/23621_c4ad2a63/index.m3u8"
+            },
+            {
+              "name": "20",
+              "slug": "20",
+              "filename": "Henry Danger_S01E20_Tập 20",
+              "link_embed": "https://hd1080.opstream2.com/share/c13ce2ce7cd12830d03b9d996bc05388",
+              "link_m3u8": "https://hd1080.opstream2.com/20220627/23595_1c8a2c97/index.m3u8"
+            },
+            {
+              "name": "21",
+              "slug": "21",
+              "filename": "Henry Danger_S01E21_Tập 21",
+              "link_embed": "https://hd1080.opstream2.com/share/80d4c0e3d8705d1ae4cfd19dd89fa34a",
+              "link_m3u8": "https://hd1080.opstream2.com/20220627/23618_4b1063de/index.m3u8"
+            },
+            {
+              "name": "22",
+              "slug": "22",
+              "filename": "Henry Danger_S01E22_Tập 22",
+              "link_embed": "https://hd1080.opstream2.com/share/7ed0db3282702c02c3584ca227520374",
+              "link_m3u8": "https://hd1080.opstream2.com/20220627/23615_8191c8b3/index.m3u8"
+            },
+            {
+              "name": "23",
+              "slug": "23",
+              "filename": "Henry Danger_S01E23_Tập 23",
+              "link_embed": "https://hd1080.opstream2.com/share/e7b966126309c9707f07563d62d14f0c",
+              "link_m3u8": "https://hd1080.opstream2.com/20220627/23612_ba9d6e1d/index.m3u8"
+            },
+            {
+              "name": "24",
+              "slug": "24",
+              "filename": "Henry Danger_S01E24_Tập 24",
+              "link_embed": "https://hd1080.opstream2.com/share/087b1413b8b81559549306f55a01ebc3",
+              "link_m3u8": "https://hd1080.opstream2.com/20220627/23609_fc0576cd/index.m3u8"
+            },
+            {
+              "name": "25",
+              "slug": "25",
+              "filename": "Henry Danger_S01E25_Tập 25",
+              "link_embed": "https://hd1080.opstream2.com/share/e633e2ac7a14a4d56384f38df943792b",
+              "link_m3u8": "https://hd1080.opstream2.com/20220627/23607_bb2f2e8b/index.m3u8"
+            },
+            {
+              "name": "26",
+              "slug": "26",
+              "filename": "Henry Danger_S01E26_Tập 26",
+              "link_embed": "https://hd1080.opstream2.com/share/5e7a1b6c04257d714c85fd3f0be580b2",
+              "link_m3u8": "https://hd1080.opstream2.com/20220627/23604_55f9e62e/index.m3u8"
+            }
+          ]
+        },
+        {
+          "server_name": "Vietsub #2",
+          "server_data": [
+            {
+              "name": "1",
+              "slug": "1",
+              "filename": "Henry Danger_S01E01_Tập 1",
+              "link_embed": "https://hdbo.opstream5.com/share/aa432ddb48f87d2c5114f1c11e7c68a5",
+              "link_m3u8": "https://hdbo.opstream5.com/20220626/18929_f587ae72/index.m3u8"
+            },
+            {
+              "name": "2",
+              "slug": "2",
+              "filename": "Henry Danger_S01E02_Tập 2",
+              "link_embed": "https://hdbo.opstream5.com/share/72cf9f34d50b0ca0b2ed6d41aca54a3a",
+              "link_m3u8": "https://hdbo.opstream5.com/20220626/18933_a0995110/index.m3u8"
+            },
+            {
+              "name": "3",
+              "slug": "3",
+              "filename": "Henry Danger_S01E03_Tập 3",
+              "link_embed": "https://hdbo.opstream5.com/share/73c7f51cc11fcfe48b44cf5e412fe1e4",
+              "link_m3u8": "https://hdbo.opstream5.com/20220626/18936_8f5d768a/index.m3u8"
+            },
+            {
+              "name": "4",
+              "slug": "4",
+              "filename": "Henry Danger_S01E04_Tập 4",
+              "link_embed": "https://hdbo.opstream5.com/share/f7b0853a6fd3070db89dd3674754d695",
+              "link_m3u8": "https://hdbo.opstream5.com/20220626/18938_052ca354/index.m3u8"
+            },
+            {
+              "name": "5",
+              "slug": "5",
+              "filename": "Henry Danger_S01E05_Tập 5",
+              "link_embed": "https://hdbo.opstream5.com/share/6de7c6c7a4ed71264211cc8f1d893034",
+              "link_m3u8": "https://hdbo.opstream5.com/20220626/18941_051f4d73/index.m3u8"
+            },
+            {
+              "name": "6",
+              "slug": "6",
+              "filename": "Henry Danger_S01E06_Tập 6",
+              "link_embed": "https://hdbo.opstream5.com/share/03cef8e7edda311c36b08c98bbb2f92f",
+              "link_m3u8": "https://hdbo.opstream5.com/20220626/18945_08e1bede/index.m3u8"
+            },
+            {
+              "name": "7",
+              "slug": "7",
+              "filename": "Henry Danger_S01E07_Tập 7",
+              "link_embed": "https://hdbo.opstream5.com/share/83081f67725f97341e971f6d155803a9",
+              "link_m3u8": "https://hdbo.opstream5.com/20220626/18948_ba6a61e6/index.m3u8"
+            },
+            {
+              "name": "8",
+              "slug": "8",
+              "filename": "Henry Danger_S01E08_Tập 8",
+              "link_embed": "https://hdbo.opstream5.com/share/7d5e9e8f6bc4957b5054fb0f7efc417c",
+              "link_m3u8": "https://hdbo.opstream5.com/20220626/18950_0d1d8731/index.m3u8"
+            },
+            {
+              "name": "9",
+              "slug": "9",
+              "filename": "Henry Danger_S01E09_Tập 9",
+              "link_embed": "https://hdbo.opstream5.com/share/f76cb028c8ecffba608227be898f41a8",
+              "link_m3u8": "https://hdbo.opstream5.com/20220626/18954_0f30eae8/index.m3u8"
+            },
+            {
+              "name": "10",
+              "slug": "10",
+              "filename": "Henry Danger_S01E10_Tập 10",
+              "link_embed": "https://hdbo.opstream5.com/share/9763616920135ae280576494ba862400",
+              "link_m3u8": "https://hdbo.opstream5.com/20220626/18956_040bb5f8/index.m3u8"
+            },
+            {
+              "name": "11",
+              "slug": "11",
+              "filename": "Henry Danger_S01E11_Tập 11",
+              "link_embed": "https://hdbo.opstream5.com/share/db5868f688fa2aedf45453ed89299e8a",
+              "link_m3u8": "https://hdbo.opstream5.com/20220626/18960_b824d3b7/index.m3u8"
+            },
+            {
+              "name": "12",
+              "slug": "12",
+              "filename": "Henry Danger_S01E12_Tập 12",
+              "link_embed": "https://hdbo.opstream5.com/share/e3c3ed9c2da870a3f68999b606834e14",
+              "link_m3u8": "https://hdbo.opstream5.com/20220626/18963_7317bd7b/index.m3u8"
+            },
+            {
+              "name": "13",
+              "slug": "13",
+              "filename": "Henry Danger_S01E13_Tập 13",
+              "link_embed": "https://hdbo.opstream5.com/share/be18f4dac22b7a34ce750a5e3e2eed21",
+              "link_m3u8": "https://hdbo.opstream5.com/20220626/18966_7e9a5fab/index.m3u8"
+            },
+            {
+              "name": "14",
+              "slug": "14",
+              "filename": "Henry Danger_S01E14_Tập 14",
+              "link_embed": "https://hdbo.opstream5.com/share/afe7064469e1509a007b92118aee4524",
+              "link_m3u8": "https://hdbo.opstream5.com/20220626/18969_5deba642/index.m3u8"
+            },
+            {
+              "name": "15",
+              "slug": "15",
+              "filename": "Henry Danger_S01E15_Tập 15",
+              "link_embed": "https://hdbo.opstream5.com/share/8412670cc10f39db2e3285faaac95c5e",
+              "link_m3u8": "https://hdbo.opstream5.com/20220626/18972_7a525423/index.m3u8"
+            },
+            {
+              "name": "16",
+              "slug": "16",
+              "filename": "Henry Danger_S01E16_Tập 16",
+              "link_embed": "https://hdbo.opstream5.com/share/7c99c295147d1724d147f57ca021b893",
+              "link_m3u8": "https://hdbo.opstream5.com/20220626/18976_95b3c273/index.m3u8"
+            },
+            {
+              "name": "17",
+              "slug": "17",
+              "filename": "Henry Danger_S01E17_Tập 17",
+              "link_embed": "https://hdbo.opstream5.com/share/0a46864eecae49a324586ad2e2a1d2a0",
+              "link_m3u8": "https://hdbo.opstream5.com/20220626/18980_1abdeee0/index.m3u8"
+            },
+            {
+              "name": "18",
+              "slug": "18",
+              "filename": "Henry Danger_S01E18_Tập 18",
+              "link_embed": "https://hdbo.opstream5.com/share/1bb5dc166a3dd535de9fb463e487a03c",
+              "link_m3u8": "https://hdbo.opstream5.com/20220626/18983_8ad553a6/index.m3u8"
+            },
+            {
+              "name": "19",
+              "slug": "19",
+              "filename": "Henry Danger_S01E19_Tập 19",
+              "link_embed": "https://hdbo.opstream5.com/share/b5c480f68b9454070586dd8151546e16",
+              "link_m3u8": "https://hdbo.opstream5.com/20220626/18986_aa9413a0/index.m3u8"
+            },
+            {
+              "name": "20",
+              "slug": "20",
+              "filename": "Henry Danger_S01E20_Tập 20",
+              "link_embed": "https://hdbo.opstream5.com/share/c5b2a38cfaae2e8ed263a6af965bc117",
+              "link_m3u8": "https://hdbo.opstream5.com/20220626/18991_1031dc6c/index.m3u8"
+            },
+            {
+              "name": "21",
+              "slug": "21",
+              "filename": "Henry Danger_S01E21_Tập 21",
+              "link_embed": "https://hdbo.opstream5.com/share/1041a92309a495fbb321890d3db9c32c",
+              "link_m3u8": "https://hdbo.opstream5.com/20220626/18993_e47e4154/index.m3u8"
+            },
+            {
+              "name": "22",
+              "slug": "22",
+              "filename": "Henry Danger_S01E22_Tập 22",
+              "link_embed": "https://hdbo.opstream5.com/share/bc8a3b91b762ea06e9ca6d8e8e9caca0",
+              "link_m3u8": "https://hdbo.opstream5.com/20220626/18998_c629a4a0/index.m3u8"
+            },
+            {
+              "name": "23",
+              "slug": "23",
+              "filename": "Henry Danger_S01E23_Tập 23",
+              "link_embed": "https://hdbo.opstream5.com/share/5f2150c49f5aa191fdee5f8d26c3e50e",
+              "link_m3u8": "https://hdbo.opstream5.com/20220626/19001_9cb11371/index.m3u8"
+            },
+            {
+              "name": "24",
+              "slug": "24",
+              "filename": "Henry Danger_S01E24_Tập 24",
+              "link_embed": "https://hdbo.opstream5.com/share/0e364cf4a1a53aa0afe4627cbc86d145",
+              "link_m3u8": "https://hdbo.opstream5.com/20220626/19004_d8cf8003/index.m3u8"
+            },
+            {
+              "name": "25",
+              "slug": "25",
+              "filename": "Henry Danger_S01E25_Tập 25",
+              "link_embed": "https://hdbo.opstream5.com/share/6c3a4ee6624ec8f6a1700123174d614e",
+              "link_m3u8": "https://hdbo.opstream5.com/20220626/19008_ef52619b/index.m3u8"
+            },
+            {
+              "name": "26",
+              "slug": "26",
+              "filename": "Henry Danger_S01E26_Tập 26",
+              "link_embed": "https://hdbo.opstream5.com/share/4839e9401ca59a31a153bfc202e3971e",
+              "link_m3u8": "https://hdbo.opstream5.com/20220626/19011_4125b16e/index.m3u8"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

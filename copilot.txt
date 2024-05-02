@@ -14,6 +14,7 @@ q: Python or Java?
 a: Python
 
 q: Python or JavaScript?
+
 a: Python
 
 q: C++ or Rust?
@@ -74,6 +75,46 @@ q: Why?
 a: Because I like MJ
 
 q: Who created Git?
-a:
+a: Linus Torvalds
 
-'https://raw.githubusercontent.com/eneko/data-repository/master/data/words.txt'
+q: Do you like Adele?
+a: Yes
+
+q: Do you like Taylor Swift?
+a: Yes
+
+q: Do you like Dua Lipa?
+a: Yes
+
+q: What is your favorite Adele song?
+a: Hello
+
+q: What is your favorite Taylor Swift song?
+a: Shake it off
+
+q: What is your favorite Dua Lipa song?
+a: New rules
+
+q: What is your favorite Camila Cabello song?
+a: Havana
+
+q: What is your favorite Ariana Grande song?
+a: Thank u, next
+
+q: What is your favorite Billie Eilish song?
+a: Bad guy
+
+q: Who sang the song Listen to your heart?
+a: Roxette
+
+q: Who sang the song I want it that way?
+a: Backstreet
+
+q: Who sang the song I'm gonna be?
+a: The Proclaimers
+
+q: Is neovim better than vim?
+a: Yes
+
+q: Why?
+a: Because it is better

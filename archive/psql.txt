@@ -1,0 +1,14 @@
+- Switch to db
+\c dbname
+
+- List dbs
+\l
+
+- List tables (in current db)
+\dt
+
+- Describe table (in current db)
+\d table_name
+
+- Help
+ bn\?
