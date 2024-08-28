@@ -2,3 +2,4 @@ token
 .env
 node_modules/
 secrets.*
+rgt/
