@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# File containing the list of URLs
+URL_FILE="squawker.txt"
+
+# Check if the file exists
+if [ ! -f "$URL_FILE" ]; then
+  echo "File $URL_FILE not found!"
+  exit 1
+fi
+
+# Read the file line by line and open each URL
+while IFS= read -r url; do
+  # >&2 echo "DEBUGPRINT[2]: squawker:14: url=${url}"
+  xdg-open "$url"
+done < "$URL_FILE"
