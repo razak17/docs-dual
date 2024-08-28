@@ -1,4 +1,4 @@
-const parameters = [
+const parameters = [,
   {
     "date":"2024-06-13 10:47:02",
     "id":566,
