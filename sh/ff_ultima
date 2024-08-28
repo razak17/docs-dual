@@ -1,0 +1,20 @@
+#!/bin/bash
+
+dir="$HOME/.dots/FF-ULTIMA"
+profile="clean-vertical"
+
+if [ ! -d "$HOME/.mozilla/firefox/profiles/$profile" ]; then
+  echo "Profile $profile does not exist"
+  exit 1
+fi
+
+if [ ! -d "$dir" ]; then
+  git clone https://github.com/soulhotel/FF-ULTIMA.git "$dir"
+fi
+
+mkdir -p "$HOME/.mozilla/firefox/profiles/$profile/chrome"
+pushd "$profile/chrome" || exit 1
+cp -r "$dir" "$HOME/.mozilla/firefox/profiles/$profile/chrome"
+mv FF-ULTIMA/* FF-ULTIMA/.* .
+rmdir FF-ULTIMA
+mv ./user.js ../user.js-overrides/_ff_ultima.js
