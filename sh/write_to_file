@@ -1,0 +1,25 @@
+#!/bin/bash
+
+
+# echo "{lv=input}\n" > myfile.txt
+echo -e "Hello, World!\n\n$(cat myfile.txt)" > myfile.txt
+# echo -e "Hello, World!\n" > myfile.txt
+
+# echo "This is the prepended text" > temp.txt
+# cat myfile.txt >> temp.txt
+# mv temp.txt myfile.txt
+#!/bin/bash
+
+file="myfile.txt"
+# prepend
+if [ ! -f '/home/razak/Sync/Android/Code/myfile.txt' ] ; then
+  echo -e "Hello, World1!\n" > /home/razak/Sync/Android/Code/myfile.txt
+else
+  echo -e "Hello, World22!\n\n$(cat $file)" > /home/razak/Sync/Android/Code/myfile.txt
+fi
+
+# append
+# echo -e "Hello, World3!\n" >> myfile.txt
+
+# overwrite
+# echo -e "Hello, World!\n" > myfile.txt

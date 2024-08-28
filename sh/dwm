@@ -1,0 +1,13 @@
+#!/bin/sh
+
+export WM="dwm"
+
+wmpid() { # This function is needed if there are multiple instances of the window manager.
+	tree="$(pstree -ps $$)"
+	tree="${tree#*$WM(}"
+	echo "${tree%%)*}"
+}
+
+hello=$(wmpid)
+>&2 echo "DEBUGPRINT[1]: dwm:11: hello=${hello}"
+kill -HUP "$hello"

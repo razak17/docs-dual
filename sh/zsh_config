@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+
+installZshPlugins() {
+	plugins=(
+		'esc/conda-zsh-completion'
+		'djui/alias-tips'
+		# 'agkozak/zsh-z'
+		'zsh-users/zsh-autosuggestions'
+		'zsh-users/zsh-completions'
+		'zsh-users/zsh-syntax-highlighting'
+		'marlonrichert/zsh-hist'
+		'hlissner/zsh-autopair'
+		'MichaelAquilina/zsh-auto-notify'
+		'baliestri/pnpm.plugin.zsh'
+		'MenkeTechnologies/zsh-cargo-completion'
+		'Aloxaf/fzf-tab'
+	)
+  cd ~/.config/zsh || exit
+	for i in "${plugins[@]}"; do
+		name=$(echo "${i}" | sed 's|.*/||')
+		if [ "$name" == 'pnpm.plugin.zsh' ]; then
+			name="pnpm"
+		fi
+		if [ "$name" == 'zsh-cargo-completion' ]; then
+			name="cargo"
+		fi
+    # cd ~
+    # /usr/bin/git --git-dir=$HOME/.dots/dotfiles/ --work-tree=$HOME submodule deinit -f -- $HOME/.config/zsh/plugins/"$name"
+    # /usr/bin/git --git-dir=$HOME/.dots/dotfiles/ --work-tree=$HOME rm -f $HOME/.config/zsh/plugins/"$name"
+    # cd ~/.dots/dotfiles || exit
+    # rm -rf ./modules/$HOME/.config/zsh/plugins/"$name"
+
+		if [[ -d "$HOME/.config/zsh/plugins/${name}" ]]; then
+			echo "dir ${name} already exists."
+		else
+		  cd ~/.config/zsh/plugins
+		 /usr/bin/git --git-dir=$HOME/.dots/dotfiles/ --work-tree=$HOME submodule add https://github.com/"$i"
+		 # /usr/bin/git --git-dir=$HOME/.dots/dotfiles/ --work-tree=$HOME submodule add https://github.com/"$i" ~/.config/zsh/plugins/"$name"
+		fi
+	done
+}
+
+installZshPlugins
