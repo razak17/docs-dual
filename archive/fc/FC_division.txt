@@ -1,0 +1,214 @@
+X
+Man U
+Man C
+Chelsea
+Arsnl FC
+Liverpool
+Tottenham
+Everton
+Newcastle
+Swansea
+Southampton
+Stoke
+Sunderland
+West Ham
+Fulham
+Aston V
+West Brom
+Norwich
+Cardiff
+Hull
+C Palace
+Wigan
+Queens Park R
+Leicester
+Watford
+Brighton
+Nottm F
+Derby
+Bolton
+Leeds
+Burnley
+Birmingham
+Middlesbrough
+Reading
+Charlton
+Blackburn
+Ipswich
+Sheff W
+Blackpool
+Huddersfield
+Millwall
+Bournemouth
+Wolverhampton
+Doncaster
+Barnsley
+Peterborough
+Preston
+Yeovil
+Coventry
+Brentford
+Bristol C
+Sheff U
+Leyton O
+Swindon
+Milton Keynes
+Walsall
+Tranmere
+Crawley
+Crewe
+Stevenage
+Notts C
+Carlisle
+Shrewsbury
+Oldham
+Colchester
+Port V
+Gillingham
+Bradford
+Scunthorpe
+Rotherham
+Fleetwood
+Northampton
+Southend
+Hartlepool
+Exeter
+Cheltenham
+Burton
+Bury
+Portsmouth
+Chesterfield
+Oxford U
+Rochdale
+York
+Wycombe
+Torquay
+Bristol R
+Morecambe
+Plymouth
+Accrington
+Dagenham
+Wimbledon
+Aldershot
+Barnet
+Mansfield
+Kidderminster
+Luton
+Cambridge
+Halifax
+Newport
+Grimsby
+Forest G
+Wrexham
+Dartford
+Macclesfield
+Chorley
+Woking
+Southport
+Alfreton
+Lincoln
+Braintree
+Gateshead
+Hyde
+Guiseley
+Brackley
+Telford
+Altrincham
+Tamworth
+Stockport
+Gainsborough
+Nuneaton
+Staines
+Ebbsfleet
+Chester
+Solihull
+Boston
+Salisbury
+Welling
+Dover
+Eastleigh
+Bromley
+Sutton
+Weston-S-Mare
+Gosport
+Hednesford
+Boreham Wood
+Bath
+Chelmsford
+N Ferriby
+Colwyn Bay
+Histon
+Stalybridge
+Oxford C
+Bradford PA
+Worcester
+Harrogate
+Leamington
+Tonbridge
+Maidenhead
+Farnborough
+Basingstoke
+Eastbourne
+Dorchester
+Barrow
+Droylsden
+Havant
+Maidstone
+Weymouth
+Marine
+Hinckley
+Corby
+Darlington
+Billericay
+Barcelona
+Madrid/A Madrid
+Munich
+Dortmund/Leverkusen
+Milan/Juventus
+Roma/Inter
+Paris
+Marseille/Monaco
+Amsterdam
+Eindhoven/Feyenoord
+Porto/Lisbon
+Moscow/St Petersburg
+Anderlecht
+Fenerbahce/Galatasaray
+Gothenburg/Malmo
+Rosenborg/Molde
+Glasgow C
+Vienna/Salzburg
+Kiev/Donetsk
+Copenhagen/Brondby
+Ludogorets
+Bucharest
+Warsaw
+Olympiacos/Athens
+Sevilla/Sociedad
+Valencia/Villarreal
+Wolfsburg/Bremen
+Frankfurt/Stuttgart
+Napoli/Lazio
+Fiorentina/Torino
+Lyon/Lille
+St-Etienne/Bordeaux
+Alkmaar/Arnhem
+Rotterdam/Twente
+Benfica/Braga
+Kazan/Krasnodar
+Liege/Brugge
+Besiktas/Trabzonspor
+Bratislava
+Belgrade
+Aberdeen/Inverness
+Tbilisi
+Helsinki
+Prague
+Tel-Aviv
+Limassol/Nicosia
+Genk/Lokeren
+Zurich/Basel
+Maribor
+Zagreb/Rijeka
+Man U/Chelsea
+Tottenham/Liverpool

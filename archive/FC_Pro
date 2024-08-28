@@ -1,0 +1,22 @@
+UPDATE squad SET p_rating = 99, p_personality = 5 WHERE p_age < 25
+UPDATE squad SET p_wage = 17000 WHERE p_age < 30
+UPDATE squad SET p_rating = 99 WHERE id IN (23,77,79,81,83,97,100,125,126,128,129,130,134,135)
+UPDATE squad SET p_rating = 97 WHERE id IN (82,85,88,127)
+
+UPDATE fixtures SET opp_rat = 77 WHERE home_away = "away" OR comp != "L"
+UPDATE fixtures SET opp_rat = 90 WHERE home_away = "home" AND opp_rat > 90
+UPDATE fixtures SET opp_rat = 77 WHERE home_away = "away"
+UPDATE fixtures SET opp_rat = 84 WHERE opp_rat < 80
+
+UPDATE league_teams SET lt_rating = 99 WHERE lt_id IN (2,4,14,148,84)
+
+UPDATE league_teams SET lt_rating = 95 WHERE id IN (5,6,7,11,36,42,43,59,)
+
+UPDATE league_teams SET lt_rating = 90 WHERE id IN (16,18,21,25,26,52,55,62)
+
+
+UPDATE fixtures SET opp_rat=77 WHERE home_away='home'
+UPDATE squad SET p_form=3, p_fit=1, p_hap=3,p_hapweeks=3
+UPDATE squad SET p_rating=99, p_personality=0, p_style=0 WHERE id IN (1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18)
+UPDATE config SET mgr_rating=99, mgr_transfers=99, mgr_coaching=99
+UPDATE fixtures SET opp_rat=33 WHERE home_away='away'
