@@ -1,0 +1,14 @@
+
+DEBUGPRINT[1]: bootstrap.lua:9: local_config=<userdata 1>
+"messages.txt" 0L, 0B
+
+DEBUGPRINT[1]: bootstrap.lua:9: local_config=<userdata 1>
+"messages.txt" 3L, 81B
+DEBUGPRINT[1]: bootstrap.lua:9: local_config=<userdata 1>
+
+"~/docs/messages.txt" 7L, 221B
+"lua/init.lua" 28L, 1149B
+DEBUGPRINT[1]: bootstrap.lua:9: local_config=<userdata 1>
+messages are supposed to be here.
+messages are supposed to be here.
+"lua/init.lua" 34L, 1220B
