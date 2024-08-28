@@ -1,0 +1,90 @@
+POST {{GOOGLE_API_ENDPOINT}}/relyingparty/verifyPassword?key={{GOOGLE_API_KEY}} HTTP/1.1
+content-type: application/json
+accept: application/json
+# @env-stdin-cmd ID_TOKEN jq -rcj .idToken
+# @env-stdin-cmd REFRESH_TOKEN jq -rcj .refreshToken
+
+{
+  "email": "{{EMAIL}}",
+  "password": "{{PASSWORD}}",
+  "returnSecureToken": true
+}
+
+###
+
+POST {{GOOGLE_API_ENDPOINT}}/relyingparty/getAccountInfo?key={{GOOGLE_API_KEY}} HTTP/1.1
+content-type: application/json
+accept: application/json
+# @env-stdin-cmd ID_TOKEN jq -rcj .idToken
+
+{
+  "idToken": "{{ID_TOKEN}}",
+}
+
+###
+
+POST {{SECURE_TOKEN_API_ENDPOINT}}/token?key={{GOOGLE_API_KEY}} HTTP/1.1
+content-type: application/json
+accept: application/json
+# @env-stdin-cmd AUTH_TOKEN jq -rcj .access_token
+
+{
+  "grant_type": "refresh_token",
+  "refresh_token": "{{REFRESH_TOKEN}}",
+}
+
+###
+
+# Get relevant results for a dashboard - Lab Tests
+# Use HTTP/1.0 and the application/json content type as headers
+GET {{API_ENDPOINT}}/lab-tests-v2/relevant-results?dashboardId=132
+accept: application/json
+Authorization: Bearer {{AUTH_TOKEN}}
+
+###
+
+# Get relevant results for a dashboard - Imaging
+# Use HTTP/1.0 and the application/json content type as headers
+GET {{API_ENDPOINT}}/imaging/relevant-results?dashboardId=136
+accept: application/json
+Authorization: Bearer {{AUTH_TOKEN}}
+
+###
+
+# Get relevant results for a dashboard - Pathology Tests
+# Use HTTP/1.0 and the application/json content type as headers
+GET {{API_ENDPOINT}}/pathology-tests/relevant-results?dashboardId=132
+accept: application/json
+Authorization: Bearer {{AUTH_TOKEN}}
+
+###
+
+# Get relevant results for a dashboard - Procedures
+# Use HTTP/1.0 and the application/json content type as headers
+GET {{API_ENDPOINT}}/procedures/relevant-results?dashboardId=157
+accept: application/json
+Authorization: Bearer {{AUTH_TOKEN}}
+
+###
+
+# Get relevant results for a dashboard - Medications
+# Use HTTP/1.0 and the application/json content type as headers
+GET {{API_ENDPOINT}}/medications/relevant-results?dashboardId=131
+accept: application/json
+Authorization: Bearer {{AUTH_TOKEN}}
+
+###
+
+# Get relevant results for a dashboard - Diagnostic Tests
+# Use HTTP/1.0 and the application/json content type as headers
+GET {{API_ENDPOINT}}/diagnostic-tests/relevant-results?dashboardId=157
+accept: application/json
+Authorization: Bearer {{AUTH_TOKEN}}
+
+###
+
+# Get relevant results for a dashboard - Visits
+# Use HTTP/1.0 and the application/json content type as headers
+GET {{API_ENDPOINT}}/visits/relevant-results?dashboardId=116
+accept: application/json
+Authorization: Bearer {{AUTH_TOKEN}}

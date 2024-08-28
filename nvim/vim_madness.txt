@@ -1,0 +1,25 @@
+:help 42
+:help holy-grail
+:help!
+:help map-modes (see comment below the table about :nunmap)
+:help spoon
+:help showmatch (read the note)
+:Ni!
+:help bar
+
+
+<C-v> to start block visual selection
+
+select the numbers
+g<C-a> The numbers are now all incremented and each one is bigger than the previous, ie: a column full of 1 becomes 1 2 3 4...
+
+1
+2
+3
+4
+5
+
+The built in autocompletion. Ctrl+n for just words and Ctrl+x F for filenames/paths
+
+
+o in visual mode mode moves the cursor between the start and the end of the selection

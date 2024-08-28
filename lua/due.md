@@ -1,0 +1,7 @@
+- Do the thing <2024-08-29>
+- <2025-08-29> This stuff needs to be done.
+- Need to do still <2024-08-09>
+- This year **<08-10>**
+- Takes first due <08-13> <09-22>
+- Time <2024-08-13 17:00>
+- AM/PM <2024-08-13 7:00 PM>
