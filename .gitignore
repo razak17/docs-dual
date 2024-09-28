@@ -3,3 +3,4 @@ token
 node_modules/
 secrets.*
 rgt/
+http-client.env.json
