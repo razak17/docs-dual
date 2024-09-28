@@ -1,0 +1,81 @@
+[submodule ".config/zsh/plugins/conda-zsh-completion"]
+	path = .config/zsh/plugins/conda-zsh-completion
+	url = https://github.com/esc/conda-zsh-completion
+[submodule ".config/zsh/plugins/alias-tips"]
+	path = .config/zsh/plugins/alias-tips
+	url = https://github.com/djui/alias-tips
+[submodule ".config/zsh/plugins/zsh-autosuggestions"]
+	path = .config/zsh/plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule ".config/zsh/plugins/zsh-completions"]
+	path = .config/zsh/plugins/zsh-completions
+	url = https://github.com/zsh-users/zsh-completions
+[submodule ".config/zsh/plugins/zsh-syntax-highlighting"]
+	path = .config/zsh/plugins/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting
+[submodule ".config/zsh/plugins/zsh-hist"]
+	path = .config/zsh/plugins/zsh-hist
+	url = https://github.com/marlonrichert/zsh-hist
+[submodule ".config/zsh/plugins/zsh-autopair"]
+	path = .config/zsh/plugins/zsh-autopair
+	url = https://github.com/hlissner/zsh-autopair
+[submodule ".config/zsh/plugins/zsh-auto-notify"]
+	path = .config/zsh/plugins/zsh-auto-notify
+	url = https://github.com/MichaelAquilina/zsh-auto-notify
+[submodule ".config/zsh/plugins/zsh-cargo-completion"]
+	path = .config/zsh/plugins/zsh-cargo-completion
+	url = https://github.com/MenkeTechnologies/zsh-cargo-completion
+[submodule ".config/zsh/plugins/fzf-tab"]
+	path = .config/zsh/plugins/fzf-tab
+	url = https://github.com/Aloxaf/fzf-tab
+[submodule ".config/zsh/plugins/pnpm"]
+	path = .config/zsh/plugins/pnpm
+	url = https://github.com/baliestri/pnpm.plugin.zsh
+
+
+conf submodule deinit -f --all
+conf rm -rf .dots/dotfiles/modules/*
+
+conf submodule deinit -f --all
+conf rm --cached path/to/submodule
+conf submodule add <url> path/to/submodule
+
+conf submodule sync --recursive
+conf submodule update --init --recursive
+
+
+conf rm --cached .config/zsh/plugins/conda-zsh-completion
+conf rm --cached .config/zsh/plugins/alias-tips
+conf rm --cached .config/zsh/plugins/zsh-autosuggestions
+conf rm --cached .config/zsh/plugins/zsh-completions
+conf rm --cached .config/zsh/plugins/zsh-syntax-highlighting
+conf rm --cached .config/zsh/plugins/zsh-hist
+conf rm --cached .config/zsh/plugins/zsh-autopair
+conf rm --cached .config/zsh/plugins/zsh-auto-notify
+conf rm --cached .config/zsh/plugins/zsh-cargo-completion
+conf rm --cached .config/zsh/plugins/fzf-tab
+conf rm --cached .config/zsh/plugins/pnpm
+
+conf submodule deinit .config/zsh/plugins/conda-zsh-completion
+conf submodule deinit .config/zsh/plugins/alias-tips
+conf submodule deinit .config/zsh/plugins/zsh-autosuggestions
+conf submodule deinit .config/zsh/plugins/zsh-completions
+conf submodule deinit .config/zsh/plugins/zsh-syntax-highlighting
+conf submodule deinit .config/zsh/plugins/zsh-hist
+conf submodule deinit .config/zsh/plugins/zsh-autopair
+conf submodule deinit .config/zsh/plugins/zsh-auto-notify
+conf submodule deinit .config/zsh/plugins/zsh-cargo-completion
+conf submodule deinit .config/zsh/plugins/fzf-tab
+conf submodule deinit .config/zsh/plugins/pnpm
+
+conf submodule add https://github.com/esc/conda-zsh-completion .config/zsh/plugins/conda-zsh-completion
+conf submodule add https://github.com/djui/alias-tips .config/zsh/plugins/alias-tips
+conf submodule add https://github.com/zsh-users/zsh-autosuggestions .config/zsh/plugins/zsh-autosuggestions
+conf submodule add https://github.com/zsh-users/zsh-completions .config/zsh/plugins/zsh-completions
+conf submodule add https://github.com/zsh-users/zsh-syntax-highlighting .config/zsh/plugins/zsh-syntax-highlighting
+conf submodule add https://github.com/marlonrichert/zsh-hist .config/zsh/plugins/zsh-hist
+conf submodule add https://github.com/hlissner/zsh-autopair .config/zsh/plugins/zsh-autopair
+conf submodule add https://github.com/MichaelAquilina/zsh-auto-notify .config/zsh/plugins/zsh-auto-notify
+conf submodule add https://github.com/MenkeTechnologies/zsh-cargo-completion .config/zsh/plugins/zsh-cargo-completion
+conf submodule add https://github.com/Aloxaf/fzf-tab .config/zsh/plugins/fzf-tab
+conf submodule add https://github.com/baliestri/pnpm.plugin.zsh .config/zsh/plugins/pnpm
