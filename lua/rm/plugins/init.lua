@@ -1507,4 +1507,4 @@ return {
     init = function() vim.opt.spelllang:append('programming') end,
   },
   ---}}}
-} issue in mini.files
+}

@@ -1,14 +1,19 @@
 {
   "lsp": {
+    "override": [],
     "disabled": {
-      "servers": [
-        "tailwindcss"
-      ]
+      "servers": ["tailwindcss"]
+    }
+  },
+  "ui": {
+    "transparent": {
+      "enable": true
+    },
+    "winbar": {
+      "variant": "plugin"
     }
   },
   "plugins": {
-    "disabled": [
-      "noice.nvim"
-    ]
+    "disabled": []
   }
 }

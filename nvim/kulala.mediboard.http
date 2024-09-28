@@ -35,6 +35,14 @@ accept: application/json
 
 ###
 
+# Get activities
+# Use HTTP/1.0 and the application/json content type as headers
+GET {{API_ENDPOINT}}/activities
+accept: application/json
+Authorization: Bearer {{AUTH_TOKEN}}
+
+###
+
 # Get relevant results for a dashboard - Lab Tests
 # Use HTTP/1.0 and the application/json content type as headers
 GET {{API_ENDPOINT}}/lab-tests-v2/relevant-results?dashboardId=132
@@ -88,3 +96,4 @@ Authorization: Bearer {{AUTH_TOKEN}}
 GET {{API_ENDPOINT}}/visits/relevant-results?dashboardId=116
 accept: application/json
 Authorization: Bearer {{AUTH_TOKEN}}
+

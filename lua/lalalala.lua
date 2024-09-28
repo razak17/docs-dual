@@ -5,7 +5,7 @@
 --  |  | \/\     /  |  |  Y Y  \      https://github.com/razak17
 --  |__|    \___/   |__|__|_|  /
 --                           \/
---------------------------------------------------------------------------------
+--------R-----------------------------------------------------------------------
 local iniii = debug.getinfo(1, "S").source:sub(2)
 local base_dir = iniii:match("(.*[/\\])"):sub(1, -2)
 if not vim.tbl_contains(vim.opt.rtp:get(), base_dir) then
@@ -15,7 +15,7 @@ end
 lol()
 hhh = "#ffff00"
 vim.g.did_load_filetypes = 0 -- deactivate vim based filetype detection
-iilocal reload, ok = pcall(require, "plenary.reload")
+local reload, ok = pcall(require, "plenary.reload")
  RELOAD = ok and reload.module or function(...)
 	return ...
 end
@@ -32,18 +32,7 @@ require("rm.config")
 
 local packer = require("packer")
 
+hello there
+
 loca test = "hello"
 
-local hello = {'apple', 'banana', 'boy', 'cat', 'orange', 'pear', 'table', 'zebra'}
-local hello = {'apple', 'banana', 'boy', 'cat', 'orange', 'pear', 'table', 'zebra'}
-local hello = {'apple', 'banana', 'boy', 'cat', 'orange', 'pear', 'table', 'zebra'}
-
-1
-2
-3
-4
-5
-"lua/ar/plugins/explorer.lua"
-
-bash <(curl https://updates.zen-browser.app/appimage.sh)
-curl -O https://updates.zen-browser.app/appimage.sh

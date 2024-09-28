@@ -16,7 +16,14 @@ writing automation scripts in Python. I am currently learning Rust.
 
 ### 🔧 Languages / Tools
 
-![Bash](https://img.shields.io/badge/-Bash-05122A?style=flat&logo=gnu-bash&logoColor=4EAA25)
+<F10><F10><F10><F10><F10><F10><F10><F10>
+<F10><F9><F11><F12><F12><F12><F12><F12><F12><F11><F9><F10><F12>
+<F12><F12><F12><F12><F12><F12><F12>
+
+
+
+
+Bash](https://img.shields.io/badge/-Bash-05122A?style=flat&logo=gnu-bash&logoColor=4EAA25)
 ![Cpp](https://img.shields.io/badge/-C++-05122A?style=flat&logo=cplusplus&logoColor=00589D)
 ![Docker](https://img.shields.io/badge/-Docker-05122A?style=flat&logo=docker&logoColor=1993EF)
 ![Git](https://img.shields.io/badge/-Git-05122A?style=flat&logo=git)

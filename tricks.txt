@@ -1,0 +1,8 @@
+-- 1.
+<b>hello</b>
+<b>mom</b>
+<b>hi</b>
+<b>bo</b>
+
+keys: <C-v>jjjjI<b><Esc>gv$A</b>
+

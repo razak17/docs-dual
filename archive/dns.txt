@@ -1,3 +1,6 @@
 https://doh.cleanbrowsing.org/doh/family-filter
 https://dns.quad9.net/dns-query
 https://doh-ch.blahdns.com/dns-query
+
+8.8.8.8
+8.8.4.4

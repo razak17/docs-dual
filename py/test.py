@@ -5,3 +5,11 @@ class Color:
         self.r = r
         self.g = g
         self.b = b
+
+class Foo:
+    hello: str
+
+
+foo = Foo()
+
+foo.
