@@ -1,0 +1,17 @@
+postgresql://postgres:root@localhost:5432/mediboard3
+
+{"testType": ["Abscess aspirate analysis", "Blood parasite exam (Malaria)", "Blood Gas"], "sampleType": ["nail", "Nasal swab", "Blood"]}
+{"doctor": "Dr Peter Dot", "testType": ["Acid Fast Stain (AFB) culture for Mycobacterium"], "institute": "95th Evacuation Hospital, Da Nang, Vietnam", "specialty": "Anesthesia", "sampleType": "Breath "}
+{"doctor": "Dr Peter Dot", "testType": ["Acid Fast Stain (AFB) culture for Mycobacterium"], "institute": "95th Evacuation Hospital, Da Nang, Vietnam", "specialty": "Anesthesia", "sampleType": ["Breath "], "oldSampleType": "Breath "}
+
+{"notes": "Fix my spine", "organ": null, "doctor": "Dr Savi Xoi", "notes1": "Fix my spine", "vaccine": null, "modality": null, "testType": null, "institute": "Abarbanel Mental Health Center, Bat Yam", "specialty": "general", "visitType": "Administrative"}
+
+feat/upcoming-activities-card-details-modifications
+
+1673a29
+
+
+Commodi laborum voluptates. Est quaerat inventore ratione qui molestiae. Eum non magnam maiores autem. Quisquam ducimus similique quia velit. Error nulla dolorem eligendi quod.
+
+#eff6ff
+

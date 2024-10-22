@@ -1,0 +1,43 @@
+{% extends "base_generic.html" %}
+
+{% block title %}{{ section.title }}{% endblock %}
+
+{% block content %}
+<h1>{{ section.title }}</h1>
+
+{% block body %}
+<div class="absolute top-0 left-0 p-10">
+    <form action="/upload">
+        <button class="relative inline-block px-4 py-2 font-medium group rounded-md">
+            <span class="absolute rounded-md inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+            <span class="absolute rounded-md inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
+            <span class="relative text-black group-hover:text-white">Go back</span>
+        </button>
+    </form>
+</div>
+{% endblock %}
+
+{% for story in story_list %}
+<h2 class="hello-there">
+  <a href="{{ story.get_absolute_url }}">
+    {{ story.headline|upper }}
+  </a>
+</h2>
+<p class="hello-there">{{ story.tease|truncatewords:"100" }}</p>
+{% endfor %}
+{% endblock %}
+
+
+-- config.lua
+local config = {
+	options = {
+		enabled = true,
+		highlight = "Conceal",
+		min_chars = 3,
+		conceal_symbol = "…", -- Add this line
+		-- other options...
+	},
+	-- other configurations...
+}
+
+return config
