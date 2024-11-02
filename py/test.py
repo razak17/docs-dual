@@ -12,4 +12,5 @@ class Foo:
 
 foo = Foo()
 
-foo.
+hello = 'hello'
+print(hello[0:50])
