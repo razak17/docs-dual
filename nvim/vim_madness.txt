@@ -23,3 +23,11 @@ The built in autocompletion. Ctrl+n for just words and Ctrl+x F for filenames/pa
 
 
 o in visual mode mode moves the cursor between the start and the end of the selection
+
+Let's say you want to copy a few lines of code or text to register `b`:
+
+1. **Visual Mode**: Use `V` to select whole lines.
+2. **Command**: After ensuring selection, press `"by` to yank this selection into register `b`.
+
+- **Command**: Enter Insert mode by pressing `i`.
+- **Command**: Press `CTRL-R`, release it, then `a`. This will insert the text of the macro in register `a`.

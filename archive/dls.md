@@ -20,6 +20,7 @@ Nicolas De La Cruz - AM, R, 126
 - Lacina Traore       - CF, R, 203
 - Ecuela Manga        - GK, B, 200
 - Stefan Maierhofer   - CF, R, 200
+- Sanjiv Salomov      - CM, L, 199
 - Naldo               - CB, R, 198
 - Dan Burn            - CB, R, 198
 - Abdoulaye Ba        - CB, R, 197
@@ -31,7 +32,6 @@ Nicolas De La Cruz - AM, R, 126
 - Mamadou Sarr        - CB, R, 196
 - Naby Sarr           - CB, R, 196
 - Mateo Pavlovic      - CB, R, 196
-- Marcos Valente      - CB, R, 196
 - Kendall Waston      - CB, R, 196
 - Marcos Valente      - CB, R, 196
 - Calum Butcher       - CB, R, 196

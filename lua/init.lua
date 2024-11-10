@@ -38,12 +38,7 @@ local hello = {'apple', 'banana', 'boy', 'cat', 'orange', 'pear', 'table', 'zebr
 local hello = {'apple', 'banana', 'boy', 'cat', 'orange', 'pear', 'table', 'zebra'}
 local hello = {'apple', 'banana', 'boy', 'cat', 'orange', 'pear', 'table', 'zebra'}
 
-1
-2
-3
-4
-5
-"lua/ar/plugins/explorer.lua"
-
 bash <(curl https://updates.zen-browser.app/appimage.sh)
 curl -O https://updates.zen-browser.app/appimage.sh
+
+local 💗 = 'heart'

@@ -1,8 +1,8 @@
-POST {{GOOGLE_API_ENDPOINT}}/relyingparty/verifyPassword?key={{GOOGLE_API_KEY}} HTTP/1.1
-content-type: application/json
-accept: application/json
 # @env-stdin-cmd ID_TOKEN jq -rcj .idToken
 # @env-stdin-cmd REFRESH_TOKEN jq -rcj .refreshToken
+POST {{GOOGLE_API_ENDPOINT}}/relyingparty/verifyPassword?key={{GOOGLE_API_KEY}} HTTP/1.1
+Content-Type: application/json
+Accept: application/json
 
 {
   "email": "{{EMAIL}}",
@@ -12,10 +12,10 @@ accept: application/json
 
 ###
 
-POST {{GOOGLE_API_ENDPOINT}}/relyingparty/getAccountInfo?key={{GOOGLE_API_KEY}} HTTP/1.1
-content-type: application/json
-accept: application/json
 # @env-stdin-cmd ID_TOKEN jq -rcj .idToken
+POST {{GOOGLE_API_ENDPOINT}}/relyingparty/getAccountInfo?key={{GOOGLE_API_KEY}} HTTP/1.1
+Content-Type: application/json
+Accept: application/json
 
 {
   "idToken": "{{ID_TOKEN}}",
@@ -23,10 +23,10 @@ accept: application/json
 
 ###
 
-POST {{SECURE_TOKEN_API_ENDPOINT}}/token?key={{GOOGLE_API_KEY}} HTTP/1.1
-content-type: application/json
-accept: application/json
 # @env-stdin-cmd AUTH_TOKEN jq -rcj .access_token
+POST {{SECURE_TOKEN_API_ENDPOINT}}/token?key={{GOOGLE_API_KEY}} HTTP/1.1
+Content-Type: application/json
+Accept: application/json
 
 {
   "grant_type": "refresh_token",
@@ -37,63 +37,62 @@ accept: application/json
 
 # Get activities
 # Use HTTP/1.0 and the application/json content type as headers
-GET {{API_ENDPOINT}}/activities
-accept: application/json
+GET {{API_ENDPOINT}}/activities HTTP/1.1
+Accept: application/json
 Authorization: Bearer {{AUTH_TOKEN}}
 
 ###
 
 # Get relevant results for a dashboard - Lab Tests
 # Use HTTP/1.0 and the application/json content type as headers
-GET {{API_ENDPOINT}}/lab-tests-v2/relevant-results?dashboardId=132
-accept: application/json
+GET {{API_ENDPOINT}}/lab-tests-v2/relevant-results?dashboardId=132 HTTP/1.1
+Accept: application/json
 Authorization: Bearer {{AUTH_TOKEN}}
 
 ###
 
 # Get relevant results for a dashboard - Imaging
 # Use HTTP/1.0 and the application/json content type as headers
-GET {{API_ENDPOINT}}/imaging/relevant-results?dashboardId=136
-accept: application/json
+GET {{API_ENDPOINT}}/imaging/relevant-results?dashboardId=136 HTTP/1.1
+Accept: application/json
 Authorization: Bearer {{AUTH_TOKEN}}
 
 ###
 
 # Get relevant results for a dashboard - Pathology Tests
 # Use HTTP/1.0 and the application/json content type as headers
-GET {{API_ENDPOINT}}/pathology-tests/relevant-results?dashboardId=132
-accept: application/json
+GET {{API_ENDPOINT}}/pathology-tests/relevant-results?dashboardId=132 HTTP/1.1
+Accept: application/json
 Authorization: Bearer {{AUTH_TOKEN}}
 
 ###
 
 # Get relevant results for a dashboard - Procedures
 # Use HTTP/1.0 and the application/json content type as headers
-GET {{API_ENDPOINT}}/procedures/relevant-results?dashboardId=157
-accept: application/json
+GET {{API_ENDPOINT}}/procedures/relevant-results?dashboardId=157 HTTP/1.1
+Accept: application/json
 Authorization: Bearer {{AUTH_TOKEN}}
 
 ###
 
 # Get relevant results for a dashboard - Medications
 # Use HTTP/1.0 and the application/json content type as headers
-GET {{API_ENDPOINT}}/medications/relevant-results?dashboardId=131
-accept: application/json
+GET {{API_ENDPOINT}}/medications/relevant-results?dashboardId=131 HTTP/1.1
+Accept: application/json
 Authorization: Bearer {{AUTH_TOKEN}}
 
 ###
 
 # Get relevant results for a dashboard - Diagnostic Tests
 # Use HTTP/1.0 and the application/json content type as headers
-GET {{API_ENDPOINT}}/diagnostic-tests/relevant-results?dashboardId=157
-accept: application/json
+GET {{API_ENDPOINT}}/diagnostic-tests/relevant-results?dashboardId=157 HTTP/1.1
+Accept: application/json
 Authorization: Bearer {{AUTH_TOKEN}}
 
 ###
 
 # Get relevant results for a dashboard - Visits
 # Use HTTP/1.0 and the application/json content type as headers
-GET {{API_ENDPOINT}}/visits/relevant-results?dashboardId=116
-accept: application/json
+GET {{API_ENDPOINT}}/visits/relevant-results?dashboardId=116 HTTP/1.1
+Accept: application/json
 Authorization: Bearer {{AUTH_TOKEN}}
-
