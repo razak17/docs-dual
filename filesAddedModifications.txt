@@ -1,0 +1,31 @@
+Issue
+
+We would like to make a few modifications on the "files added" bar:
+On the section "grants links" > we are adding a text box, that can enable the strategist to insert free text if she wants to.
+
+Backend:
+  This is optional field
+  In case this is added, we save it as "grant_added_scope"
+  LLM - In case this is added it will be taken part of the grant outline data
+
+On the section of "files added"
+Replace text in button to "add files" instead of "upload files"
+The button will open the popup (as today), though the popup is modified as follows:
+We will have a toggle to switch between "company files" and "Project files"
+Company files:
+  user will be able to view all the files added under company files
+  user will be able to add files from either: Sharepoint | Upload | insert text
+  File added will be classified as "company file" as well
+Project files:
+  User will select the project from the list of company projects
+  Dropdown, single select
+  user will be able to view all the files added under the selected project
+If the user selected the project that is allocated to the application pager:
+  all the existing project files will be already added to the bar (he can see them again in the popup)
+  user will be able to add files from either: Sharepoint | Upload | insert text
+  File added will be classified as:
+IF the project selected is the one related to the application pager: saved as "project files"
+  If the user selected a project that is different from the one allocated to the pager:
+    The user can view all the existing project files for this project
+    User can add one or more files from the existing ones. These will be tagged as "other files"
+    User can add new files, it will be saved internally under the selected project files; classify the file added to the list as "other files"

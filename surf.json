@@ -1,0 +1,16 @@
+{
+  "basicMappings": {
+    "R": "K",
+    "E": "J",
+    "S": "H",
+    "D": "L"
+  },
+  "blocklist": {},
+  "disabledSearchAliases": {},
+  "findHistory": ["close", "clipboard", "settings", "half", "reload"],
+  "lastKeys": ["yj"],
+  "localPath": "",
+  "savedAt": 1729926039299,
+  "showAdvanced": false,
+  "snippets": "// an example to create a new mapping `ctrl-y`\napi.mapkey('<ctrl-y>', 'Show me the money', function() {\n    Front.showPopup('a well-known phrase uttered by characters in the 1996 film Jerry Maguire (Escape to close).');\n});\n\n// an example to replace `T` with `gt`, click `Default mappings` to see how `T` works.\napi.map('gt', 'T');\napi.map('J', 'E');\napi.map('K', 'R');\napi.map('H', 'S');\napi.map('L', 'D');\napi.map('F', 'C');\napi.map('U', 'X');\n\napi.imap('jk', \"<Esc>\");\napi.imap(',,', \"<Esc>\");        // press comma twice to leave current input box.\napi.imap(';;', \"<Ctrl-'>\");     // press semicolon twice to toggle quote.\n\n// an example to remove mapkey `Ctrl-i`\napi.unmap('<ctrl-i>');\napi.unmap('x');\n\nsettings.startToShowEmoji = 0;\n\napi.mapkey('<Space>', 'Choose a tab with omnibar', function() {\n    api.Front.openOmnibar({type: \"Tabs\"});\n});\n\n// set theme\nsettings.theme = `\n.sk_theme {\n    font-family: Input Sans Condensed, Charcoal, sans-serif;\n    font-size: 10pt;\n    background: #24272e;\n    color: #abb2bf;\n}\n.sk_theme tbody {\n    color: #fff;\n}\n.sk_theme input {\n    color: #d0d0d0;\n}\n.sk_theme .url {\n    color: #61afef;\n}\n.sk_theme .annotation {\n    color: #56b6c2;\n}\n.sk_theme .omnibar_highlight {\n    color: #528bff;\n}\n.sk_theme .omnibar_timestamp {\n    color: #e5c07b;\n}\n.sk_theme .omnibar_visitcount {\n    color: #98c379;\n}\n.sk_theme #sk_omnibarSearchResult ul li:nth-child(odd) {\n    background: #303030;\n}\n.sk_theme #sk_omnibarSearchResult ul li.focused {\n    background: #3e4452;\n}\n#sk_status, #sk_find {\n    font-size: 20pt;\n}`;\n// click `Save` button to make above settings to take effect.</ctrl-i></ctrl-y>"
+}
