@@ -1,19 +1,29 @@
 const add = (a, b) => a + b;
 
-const test = 2 + "";
+const salu = "hello"
+const user = "bob"
+
+const greet = salu + user
+console.warn("DEBUGPRINT[113]: hello.js:6: salu + user=", salu + user)
+console.warn("DEBUGPRINT[112]: hello.js:6: greet=", greet)
+
+const test = 'test';
 const email = 'Cleta_Blanda15@hotmail.com'
+console.log("🪲 email:", email);
+console.log("🪲 email:", email);
+console.log("🪚 email:", email);
 
 function toTitleCase(str) {
   return str.replace(
     /\w\S*/g,
     (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
   )
-};
+}
 
 const user_email = `I have an ${email}`
 
 console.log("2lalal".split("")[0]);
-console.log("This Years Love!!!")
+console.log("This Year's Love!!!")
 
 console.log(toTitleCase("hello world mom dad"));
 
@@ -29,7 +39,8 @@ const hello = `
 `;
 
 function evenList(arr) {
-  for (let i = 0; i < arr; i++) {
+  for (let i
+    = 0; i < arr; i++) {
     if (i % 2 == 0) return true;
     return false;
   }
