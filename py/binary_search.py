@@ -1,4 +1,4 @@
-def binary_search(arr, target):
+def binary_search(arr: list, target: int):
     left, right = 0, len(arr) - 1
 
     while left <= right:
@@ -13,12 +13,37 @@ def binary_search(arr, target):
 
     return -1
 
-# Example usage:
-arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-target = 7
-result = binary_search(arr, target)
 
-if result != -1:
-    print(f"Element found at index {result}")
-else:
-    print("Element not found in array")
+def test_binary_search():
+    arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    target = 5
+    assert binary_search(arr, target) == 4, "Test case 1 failed"
+
+    target = 1
+    assert binary_search(arr, target) == 0, "Test case 2 failed"
+
+    target = 10
+    assert binary_search(arr, target) == 9, "Test case 3 failed"
+
+    target = 11
+    assert binary_search(arr, target) == -1, "Test case 4 failed"
+
+    target = -1
+    assert binary_search(arr, target) == -1, "Test case 5 failed"
+
+    arr = []
+    target = 1
+    assert binary_search(arr, target) == -1, "Test case 6 failed"
+
+    arr = [1]
+    target = 1
+    assert binary_search(arr, target) == 0, "Test case 7 failed"
+
+    target = 0
+    assert binary_search(arr, target) == -1, "Test case 8 failed"
+
+    print("All test cases passed.")
+
+
+# Run the test function
+test_binary_search()
