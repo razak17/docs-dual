@@ -1,3 +1,6 @@
+import unittest
+
+
 def binary_search(arr: list, target: int):
     left, right = 0, len(arr) - 1
 
@@ -45,5 +48,38 @@ def test_binary_search():
     print("All test cases passed.")
 
 
+class TestBinarySearch(unittest.TestCase):
+    def test_empty_array(self):
+        self.assertEqual(binary_search([], 1), -1)
+
+    def test_single_element_found(self):
+        self.assertEqual(binary_search([1], 1), 0)
+
+    def test_single_element_not_found(self):
+        self.assertEqual(binary_search([1], 2), -1)
+
+    def test_target_at_beginning(self):
+        self.assertEqual(binary_search([1, 2, 3, 4, 5], 1), 0)
+
+    def test_target_at_middle(self):
+        self.assertEqual(binary_search([1, 2, 3, 4, 5], 3), 2)
+
+    def test_target_at_end(self):
+        self.assertEqual(binary_search([1, 2, 3, 4, 5], 5), 4)
+
+    def test_target_not_in_array(self):
+        self.assertEqual(binary_search([1, 2, 3, 4, 5], 6), -1)
+
+    def test_array_with_duplicates(self):
+        self.assertEqual(binary_search([1, 2, 2, 2, 3], 2), 2)
+
+    def test_array_with_negative_numbers(self):
+        self.assertEqual(binary_search([-5, -2, 0, 3, 7], -2), 1)
+
+
+if __name__ == "__main__":
+    unittest.main()
+
+
 # Run the test function
-test_binary_search()
+# test_binary_search()
