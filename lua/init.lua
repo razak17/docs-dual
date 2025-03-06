@@ -12,14 +12,14 @@ vim.opt.rtp:append(base_dir)
 hhh = "#77cb99"
 vim.g.did_load_filetypes = 0 -- deactivate vim based filetype detection
 local reload, ok = pcall(require, "plenary.reload")
- RELOAD = ok and reload.module or function(...)
+RELOAD = ok and reload.module or function(...)
 	return ...
 end
 -- TODO: Test todo
 -- HACK: Test todo
 -- FIXME: Test todo
 --------------------------------------------------------------------------------
---------------------------------------------------------------------------------
+--------------------------------------------------------------------------------=
 require("rm.globals"),
 require("rm.bootstrap")
 require("rm.config")
