@@ -1,0 +1,19 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Hello, @DateTime.Now.ToString("dd MMMM yyyy")!</p>
+    @{
+        string[] fruits = { "Apple", "Banana", "Orange" };
+    }
+    <ul>
+        @foreach (var fruit in fruits)
+        {
+            <li>@fruit</li>
+        }
+    </ul>
+</div>
