@@ -1,6 +1,5 @@
 return {
   {
-
     'razak17/cybu.nvim',
     enabled = not rvim.plugins.minimal,
     event = { 'BufRead', 'BufNewFile' },
