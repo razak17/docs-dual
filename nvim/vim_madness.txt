@@ -31,3 +31,7 @@ Let's say you want to copy a few lines of code or text to register `b`:
 
 - **Command**: Enter Insert mode by pressing `i`.
 - **Command**: Press `CTRL-R`, release it, then `a`. This will insert the text of the macro in register `a`.
+
+# Register manipulaion. (q register)
+Paste reg: "qp
+save to reg: V"qy
