@@ -280,7 +280,7 @@
 
 
 - [ ] Sid Is Dead (2023)
-- [ ] Candy Lane (2023)
+- [ ] Candy Cane Lane (2023)
 - [ ] Good Burger 2 (2023)
 - [ ] A Really Haunted Loud House (2023)
 - [ ] Freelance (2023)
