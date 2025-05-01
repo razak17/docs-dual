@@ -24,5 +24,5 @@ require("rm.globals"),
 require("rm.bootstrap")
 require("rm.config")
 
-local heart = '💗 💕'
-local heart = '💗 💕'
+---@type "a" | "b" | "c"
+local enum = "a"
